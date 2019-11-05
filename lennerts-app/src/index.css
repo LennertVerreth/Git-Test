@@ -1,8 +1,12 @@
+*{
+  padding:0;
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -11,3 +15,64 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.modal-container {
+  position: relative;
+  margin: 50px;
+  width: 428px;
+  height: 149px;
+  box-shadow: 2px 2px 2px 0 rgba(35, 63, 159, 0.5);
+  border: solid 0.3px #d6dbe7;
+  background-color: #ffffff;
+  border-radius: 12.5px;
+  overflow: auto;
+}
+
+.modal-header {
+  width: 100%;
+  height: 29px;
+  background-color: #5c7294;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  overflow: hidden;
+}
+
+.modal-p {
+  margin-top: 6px;
+}
+
+.modal-content {
+  position: relative;
+  height: 89px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.content-p {
+  width: 100%;
+  position: absolute;
+  margin: 37px auto;
+  
+}
+
+.btn {
+  margin-right: 5px;
+  width: 53px;
+  height: 21px;
+  border-radius: 12.5px;
+  box-shadow: 1px 1px 2px 0 rgba(35, 63, 159, 0.5);
+  border: solid 0.5px #63687a;
+  background-color: #ffffff;
+}
+
