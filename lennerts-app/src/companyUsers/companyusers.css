@@ -1,0 +1,384 @@
+
+.company-container {
+  width: 706px;
+  margin: 80px auto;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.company-header {
+  height: 60px;
+  background-color: #d1c3bc;
+  position: relative;
+}
+
+.company-header p {
+  color: #753d3d;
+  font-size: 25px;
+  text-align: center;
+  padding-top: 14px;
+  font-weight: 700;
+}
+
+.button-header-asc {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  color: #753d3d;
+  cursor: pointer;
+}
+
+.tooltip-text-asc {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 35px;
+  top: -13px;
+}
+
+.button-header-asc:hover .tooltip-text-asc {
+  visibility: visible;
+}
+
+.button-header-desc {
+  background: none;
+  border: none;
+  position: absolute;
+  bottom: 15px;
+  left: 35px;
+  color: #753d3d;
+  cursor: pointer;
+}
+
+.tooltip-text-desc {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  left: 75px;
+  top: -13px;
+}
+
+.button-header-desc:hover .tooltip-text-desc {
+  visibility: visible;
+}
+
+
+
+  .button-header {
+background: none;
+border: none;
+position: absolute;
+bottom: 15px;
+left: 674px;
+color: #753d3d;
+cursor: pointer;
+}
+
+.tooltip-text {
+visibility: hidden;
+width: 120px;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+left: -123px;
+top: -13px;
+}
+
+.button-header:hover .tooltip-text {
+visibility: visible;
+}
+
+
+.company-content {
+padding: 5px;
+height: 422px;
+overflow: auto;
+position: relative;
+background-color: #f6f4ff;
+}
+
+.company-card {
+width: 47%;
+display: inline-block;
+padding: 5px;
+margin: 5px 5px;
+position: relative;
+color: black;
+background-color: white;
+transition: 1s;
+}
+
+.user-pic{
+width: 60px;
+height: 60px;
+border-radius: 50%;
+position: absolute;
+left: 12px;
+top: 16px;
+object-fit: cover;
+} 
+
+.user-name{
+font-size: 16px;
+font-weight: 700;
+padding-top: 6px;
+}
+
+.user-company {
+font-size: 14px;
+color: #b5b5b6;
+}
+
+.user-catchphrase {
+font-size: 12px;
+font-style: italic;
+color: #dadada;
+}
+
+.button-card {
+cursor: pointer;
+display: block;
+width: 96%;
+background-color: white;  
+color: #b4a8d9;
+border: 1px solid #b4a8d9;
+font-weight: 500;
+margin: 21px auto 7px;
+padding: 4px;
+transition: 1s;
+}
+
+.company-card{
+pointer-events: none;
+}
+
+.button-card{
+pointer-events: auto;
+}
+
+.button-card:hover{
+color: pink !important;
+/* background-color: #d1c3bc; */
+}
+
+
+.company-card:hover{
+color: pink !important;
+background-color: #d1c3bc;
+}
+
+
+.company-card p {
+margin-left: 90px;
+margin-top: 3px;
+} 
+
+/* width */
+::-webkit-scrollbar {
+width: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #d1c3bc;
+/* border-radius: 10px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: grey; 
+}
+
+
+
+
+
+
+
+
+.overlay-show {
+position: fixed; /* Sit on top of the page content */ /* Hidden by default */
+width: 100%; /* Full width (cover the whole page) */
+height: 100%; /* Full height (cover the whole page) */
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+}
+
+.company-card-show {
+background-color: white;
+width: 350px;
+position: relative;
+margin: 150px auto;
+}
+
+.user-pic-show {
+height: 80px;
+width: 80px;
+float: left;
+border-radius: 50%;
+left: 12px;
+top: 16px;
+position: absolute;
+object-fit: cover;
+}
+
+.user-catchphrase-show {
+padding-top: 36px;
+margin-left: 110px;
+margin-bottom: 34px;
+font-style: italic;
+}
+
+.button-show {
+border: none;
+padding: 8px 10px 0px 0px;
+color: black;
+cursor: pointer;
+float: right;
+background-color: white;
+font-size: 16px;
+font-weight: 700;
+}
+
+.title-show {
+padding: 8px 0px 6px 10px;
+background-color: white;
+border-top: 3px solid #f6f4ff;
+font-weight: 700;
+font-size: 16px;
+}
+
+.title-show:first-child {
+margin-top: 5px;
+}
+
+.show-name {
+margin-left: 10px;
+margin-right: 2px;
+font-size: 14px;
+}
+
+.show-value {
+color: #b5b5b6;
+text-decoration: none;
+font-size: 14px;
+}
+
+/* .show-div {
+padding-bottom: 5px;
+} */
+
+.show-div:nth-of-type(even) {
+padding-bottom: 10px;
+padding-top: 5px;
+}
+
+.show-div:last-of-type {
+border-bottom: 3px solid #f6f4ff;
+}
+
+input[type=submit] {
+width: 92%;
+margin: 10px 10px;
+border-radius: 20px;
+border: none;
+padding: 7px;
+background-color: #b4a8d9;
+font-weight: 700;
+transition: 0.6s;
+}
+
+input[type=submit]:hover {
+cursor: pointer;
+background-color: #753d3d;
+color: white;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+padding: 7px 41px 7px 13px;
+border: none;
+border-radius: 20px;
+margin: 0px 0px 8px 10px;
+background-color: #d1c3bc;
+outline: none;
+}
+
+.new-user-container {
+background-color: white;
+width: 250px;
+position: relative;
+margin: 150px auto;
+padding-top: 1px;
+}
+
+
+
+
+.upload-container {
+
+}
+
+.new-user-pic {
+height: 70px;
+width: 70px;
+background-color: green;
+border-radius: 50%;
+display: block;
+margin: 12px auto;
+/* cursor: pointer; */
+}
+
+.upload-container input[type=file] {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 89px;
+  top: 12px;
+  opacity: 0;
+  border: 1px solid;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+.new-user-delete-button {
+border: none;
+cursor: pointer;
+position: absolute;
+background-color: white;
+left: 233px;
+top: 4px;
+font-size: 16px;
+font-weight: 700;
+}
+
+.red {
+  border: 1px solid red !important;
+}

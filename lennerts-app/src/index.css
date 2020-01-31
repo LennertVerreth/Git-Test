@@ -1,12 +1,20 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
+
 *{
   padding:0;
   margin:0;
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: 'Inter';
 }
 
+button:focus {outline:0;}
+
 body {
-  margin: 0;
-  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,20 +26,21 @@ code {
 
 .modal-container {
   position: relative;
-  margin: 50px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 428px;
-  height: 149px;
   box-shadow: 2px 2px 2px 0 rgba(35, 63, 159, 0.5);
-  border: solid 0.3px #d6dbe7;
   background-color: #ffffff;
-  border-radius: 12.5px;
+  border-radius: 5px;
   overflow: auto;
 }
 
 .modal-header {
-  width: 100%;
+  padding-top: 3px;
+  width: 428px;
   height: 29px;
-  background-color: #5c7294;
+  background-color: #63687a;
   color: #ffffff;
   font-size: 13px;
   font-weight: 500;
@@ -57,6 +66,7 @@ code {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal;
+  text-align: center;
 }
 
 .content-p {
@@ -66,8 +76,13 @@ code {
   
 }
 
+.modal-footer {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 .btn {
-  margin-right: 5px;
+  margin-right: 15px;
   width: 53px;
   height: 21px;
   border-radius: 12.5px;
@@ -76,3 +91,57 @@ code {
   background-color: #ffffff;
 }
 
+.modal-container2 {
+  background-color: #007aff;
+  /* height: 155px; */
+  width: 242px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 0 rgba(35, 63, 159, 0.5);
+  position: relative;
+  opacity: 1;
+  transition: opacity 2s;
+}
+
+.modal-container2::after {
+  content: '';
+	position: absolute;
+	left: 0;
+	top: 30%;
+	width: 0;
+	height: 0;
+	border: 12px solid transparent;
+	border-right-color: #007aff;
+	border-left: 0;
+	margin-top: -12px;
+	margin-left: -12px;
+} 
+
+.modal-content2 {
+  padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.modal-footer2 {
+  text-align: center;
+  padding-top: 15px;
+
+}
+.btn2 {
+  background: none;
+  border: none;
+  color: #ffffff;
+  margin: 0px 5px;
+}
+
+.tutorial {
+  background-color: red;
+  position: absolute;
+}

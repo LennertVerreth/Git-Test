@@ -1,0 +1,38 @@
+{/* {this.state.tutorialArray.map((object, index) =>
+                            <NavigationButtons testFunction={this.thisTest} part={this.state.part} index={index} />
+                        )} */}
+
+                        {/* {this.state.tutorialArray.map((object, index) =>
+                            <button key={index} className='btn2' onClick={() => this.setPart(index)} >
+                                <FontAwesome name={this.state.part === index ? 'circle' : 'circle-o'} />
+                            </button>
+                        )} */}
+
+    // goFurther = () => {
+    //     if (this.state.part < 2){
+    //             this.setState({
+    //             part: this.state.part +1,
+    //             style: {opacity:"0.5"}
+    //         })
+
+    //         this.setState({
+    //             style: {opacity:"0"}
+    //         },
+    //         () => {
+    //             setTimeout(() => {
+    //                 this.setState({
+    //                     part: this.state.part + 1,
+    //                     style: {opacity:"1"}
+    //                 })
+    //             }, 3800)
+    //         })
+
+    //     } else {
+    //         this.setState({
+    //             part: this.state.part,
+    //         })
+    //     }
+
+    //     const test = document.getElementById("test")
+    //     test.classList.toggle("animate1")
+    // }
